@@ -23,7 +23,7 @@ A minimalist teaser for the about page.
 	const teamMember: TeamMember = {
 		name: "Alex Morgan",
 		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		image: "/generated/image-a-professional-technical-founder-with-a-.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I spent three years watching brilliant engineering teams struggle with AI integration. They had the vision, the customers, and the funding, but lacked the specialized talent and clarity to ship. We built this to change that. Every developer should have the power to build intelligent systems without betting their company on it."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
@@ -41,13 +41,13 @@ A minimalist teaser for the about page.
 					<img
 						src={teamMember.image}
 						alt={teamMember.name}
-						class="size-12 rounded-full object-cover"
+						class="size-16 rounded-full object-cover ring-2 ring-brand-500/20"
 					/>
 					<div>
 						<div class="text-callout">{teamMember.name}</div>
 						<div class="text-caption text-emphasis-low">{teamMember.role}</div>
 					</div>
-					<Button href="/about" variant="secondary" size="sm" class="ml-8">Read more</Button>
+					<Button href="/about" variant="secondary" size="sm" class="ml-8">Our story</Button>
 				</div>
 			</div>
 		</div>

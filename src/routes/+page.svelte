@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
+
+	// Icons
+	import IconCode from "~icons/lucide/code";
+	import IconBrain from "~icons/lucide/brain";
+	import IconGitBranch from "~icons/lucide/git-branch";
+	import IconNetwork from "~icons/lucide/network";
+	import IconBookOpen from "~icons/lucide/book-open";
+	import IconZap from "~icons/lucide/zap";
 </script>
 
 <CenteredTextOnlyHero
@@ -25,62 +33,97 @@
 />
 
 <Summary
-	generating
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="We provide developer-first AI infrastructure that makes advanced machine learning accessible to technical teams. Built for tech companies who need powerful AI integration without the specialized talent or implementation complexity.\n\nOur platform captures the $150B AI infrastructure market by turning sophisticated models into simple, well-documented tools that developers can integrate in hours, not months."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Priya Deshmukh",
+			position: "Co-founder & CTO",
+			company: "VectorAI",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We cut our model integration time from six weeks to eight days. Their pre-built infrastructure eliminated the need to hire three additional ML engineers, saving us $450K annually in specialized talent costs.",
+			image: "/generated/image-professional-indian-woman-engineer-stand.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "Head of Engineering",
+			company: "Synthesis Labs",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The security compliance framework reduced our audit preparation from two months to three weeks. We avoided a costly data breach that would have cost us our Series A funding and customer trust.",
+			image: "/generated/image-professional-black-man-technical-founder.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Li Wei Chen",
+			position: "Founder & CEO",
+			company: "Quantum Edge",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Their documentation and GitHub examples gave our team clarity we desperately needed. We went from zero AI capability to production deployment in 12 weeks instead of the nine months we budgeted.",
+			image: "/generated/image-professional-asian-woman-software-develo.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for developers who ship fast"
+	subtitle="Enterprise-grade AI infrastructure with the developer experience you expect from modern tools"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Developer-first APIs",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Integrate advanced ML capabilities in minutes with intuitive APIs and SDKs designed for technical founders. No PhD required to ship production-ready AI features.",
+			icon: IconCode
 		},
 		{
-			title: "Data Analysis",
+			title: "Proprietary models",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Access our custom-trained models optimized for real-world performance. Built from the ground up to outperform generic solutions on your specific use cases.",
+			icon: IconBrain
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Open-source foundation",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Start with our battle-tested open-source tools and demos. Join thousands of developers contributing to the future of AI infrastructure on GitHub.",
+			icon: IconGitBranch
+		},
+		{
+			title: "Scales to enterprise",
+			description:
+				"Deploy with confidence knowing our infrastructure powers production workloads for companies processing billions of requests. From prototype to IPO without switching providers.",
+			icon: IconNetwork
+		},
+		{
+			title: "Documentation that doesn't suck",
+			description:
+				"Clear implementation guides written by engineers, for engineers. Every endpoint documented with runnable examples and real integration patterns.",
+			icon: IconBookOpen
+		},
+		{
+			title: "Real-time intelligence",
+			description:
+				"Transform unstructured data into actionable insights with advanced NLP and automation. Process natural language at scale with sub-100ms latency.",
+			icon: IconZap
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Ship AI features in days, not months"
+	subtitle="Start building today"
+	description="Join hundreds of technical founders who've eliminated integration complexity and shipped production AI without hiring specialized talent. Get started with our open-source tools or talk to our team about enterprise deployment."
+	imageSrc="/generated/image-a-confident-business-founder-smiling-in-.webp"
+	callsToAction={[
+		{
+			href: "https://github.com",
+			label: "View on GitHub",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to our team",
+			variant: "secondary"
+		}
+	]}
+/>
